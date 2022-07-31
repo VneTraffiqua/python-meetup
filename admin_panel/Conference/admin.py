@@ -5,17 +5,17 @@ from .models import Speaker, Conference, Performance
 
 # Register your models here.
 @admin.register(Speaker)
-class SpeakerAdmin(admin.ModelAdmin):
+class Speaker(admin.ModelAdmin):
     list_display = ['telegram_id', 'fullname']
 
 
 @admin.register(Conference)
-class ConferenceAdmin(admin.ModelAdmin):
+class Conference(admin.ModelAdmin):
     list_display = ['name', 'date']
 
 
 @admin.register(Performance)
-class PerformanceAdmin(admin.ModelAdmin):
+class Performance(admin.ModelAdmin):
     list_display = ['name', 'time', 'speaker', 'conference']
     list_filter = ['conference']
 
