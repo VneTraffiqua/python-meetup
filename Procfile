@@ -1,1 +1,1 @@
-web: python3 Meetup/manage.py runserver 0.0.0.0:$PORT
+web: python3 admin_panel/Meetup/manage.py runserver 0.0.0.0:$PORT
