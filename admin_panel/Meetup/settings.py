@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['meetupwazzup.herokuapp.com', 'localhost', '0.0.0.0']
 
-CSRF_TRUSTED_ORIGINS=['https://pythonmeetupbot.herokuapp.com']
+CSRF_TRUSTED_ORIGINS=['https://meetupwazzup.herokuapp.com']
 
 # Application definition
 
