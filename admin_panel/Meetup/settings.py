@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
-
+import dj_database_url
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -81,17 +81,9 @@ WSGI_APPLICATION = 'Meetup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddou4qorvjebq3',
-        'USER': 'cwmtrobjxswajb',
-        'PASSWORD': 'abd7d7a6ae37cdf0716b4acc614ed492b95311e513a5853668f48215f6716c27',
-        'HOST': 'ec2-54-76-43-89.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
-        'DISABLE_SERVER_SIDE_CURSORS': True,
-    }
-}
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation
