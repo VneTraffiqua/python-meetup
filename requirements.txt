@@ -4,3 +4,4 @@ python-dotenv==0.20.0
 python-telegram-bot==13.2
 Heroku==0.1.4
 psycopg2-binary==2.9.3
+dj-database-url==1.0.0
