@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'Meetup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddou4qorvjebq3',
-        'USER': 'cwmtrobjxswajb',
-        'PASSWORD': 'abd7d7a6ae37cdf0716b4acc614ed492b95311e513a5853668f48215f6716c27',
-        'HOST': 'ec2-54-76-43-89.eu-west-1.compute.amazonaws.com',
+        'NAME': 'd8ha05erd7qfcj',
+        'USER': 'ibygkpmsikxucg',
+        'PASSWORD': '800ac946a317664277ed8d52b0a970c25c7909aeb5303149df3e74eb84ff3a15',
+        'HOST': 'ec2-34-249-161-200.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
         'DISABLE_SERVER_SIDE_CURSORS': True,
     }
